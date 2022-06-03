@@ -1,0 +1,108 @@
+html {
+  font-family: monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(239,244, 247)
+}
+
+main {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+header {
+  width: 100%;
+}
+
+.quote {
+  position: absolute;
+  top: 3em;
+  right: 1em;
+  color: #d2dcc8;
+  max-width: 50%;
+  float: right;
+  font-size: 1.8rem;
+  font-style: italic;
+  text-align: center;
+  font-family: 'Delius Swash Caps',   cursive;
+}
+
+.quote-caption {
+  display: block;
+  font-size: 0.8rem;
+}
+
+
+#img-div {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#image {
+  margin: 0;
+  width: 100%;
+  border-radius: 5px 60px 5px 5px;
+}
+
+figcaption {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 20px 0;
+}
+
+.timeline {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.timeline > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.timeline .year {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid black;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.timeline .text {
+  font-size: 1rem;
+}
+
+#tribute-info {
+  text-align: center;
+}
+
+#tribute-info a {
+  color: black;
+}
+
+#tribute-info a:visited {
+  color: black;
+}

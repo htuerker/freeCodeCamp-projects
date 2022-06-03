@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Free Personality Test</h1>
+      <p id="description">NERIS Type Explorer®</p>
+    </header>
+    <div class="container">
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" class="on-border">Name
+						<input id="name" type="text" placeholder="Enter your name" required />
+            </label>
+          <label id="email-label">Email<input id="email" type="email" placeholder="Enter your Email" required/></label>
+          <div id="age-gender-fields">
+            <label id="number-label">Age
+              <input id="number" type="number" placeholder="Age" min="10" max="99" value="10"/>
+            </label>
+            <div id="gender-field">
+              <div id="gender-label">Gender</div>
+              <div id="gender-inputs">
+                <label id="gender-label">
+                  <input type="radio" name="radio-gender" value="male" required/>
+                  Male
+                </label>
+                <label>
+                  <input type="radio" name="radio-gender" value="male" required/>
+                  Female
+                </label>
+                <label>
+                  <input type="radio" name="radio-gender" value="male" required/>
+                  Other
+                </label>
+              </div>
+            </div>
+          <div>
+				</div>
+        </div>
+        <textarea placeholder="Give us a feedback!"></textarea>
+        <input style="display: none;"type="checkbox" value="1">
+        <input style="display: none;"type="checkbox" value="2">
+        <select id="dropdown">
+          <option aria-placeholder="What's your occupation?"">What's your occupation?</option>
+          <option></option>
+          <option></option>
+        </select>
+        <div class="question ">
+          <label>You regularly make new friends.</label>
+          <div class="radio-group">
+            <input class="radio-4 radio-green" type="radio" name="answer1" value="1"><span class="check"></span></input>
+            <input class="radio-3 radio-green" type="radio" name="answer1" value="2"><span class="check"></span></input>
+            <input class="radio-2 radio-green"type="radio" name="answer1" value="3"><span class="check"></span></input>
+            <input class="radio-1 radio-grey"type="radio" name="answer1" value="4"><span class="check"></span></input>
+            <input class="radio-2 radio-purple" type="radio" name="answer1" value="5"><span class="check"></span></input>
+            <input class="radio-3 radio-purple" type="radio" name="answer1" value="6"><span class="check"></span></input>
+            <input class="radio-4 radio-purple"type="radio"name="answer1" value="7"><span class="check"></span></input>
+          </div>
+          <div class="captions">
+            <div class="caption-agree">AGREE</div>
+            <div class="caption-disagree">DISAGREE</div>
+          </div>
+        </div>
+        <div class="question ">
+          <label>You spend a lot of your free time exploring various random topics that pique your interest.
+          </label>
+          <div class="radio-group">
+            <input class="radio-4 radio-green" type="radio" name="answer2" value="1"><span class="check"></span></input>
+            <input class="radio-3 radio-green" type="radio" name="answer2" value="2"><span class="check"></span></input>
+            <input class="radio-2 radio-green"type="radio" name="answer2" value="3"><span class="check"></span></input>
+            <input class="radio-1 radio-grey"type="radio" name="answer2" value="4"><span class="check"></span></input>
+            <input class="radio-2 radio-purple" type="radio" name="answer2" value="5"><span class="check"></span></input>
+            <input class="radio-3 radio-purple" type="radio" name="answer2" value="6"><span class="check"></span></input>
+            <input class="radio-4 radio-purple"type="radio"name="answer2" value="7"><span class="check"></span></input>
+          </div>
+          <div class="captions">
+            <div class="caption-agree">AGREE</div>
+            <div class="caption-disagree">DISAGREE</div>
+          </div>
+        </div>
+        <button id="submit" class="submit">Next</button>
+      </form>
+    </div>
+  </body>
+</html>
