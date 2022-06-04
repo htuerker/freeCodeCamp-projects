@@ -89,6 +89,7 @@ img {
   border-right: 1px solid black;
   font-size: 0.9rem;
   font-weight: 800;
+  text-align: center;
 }
 
 .timeline .text {
