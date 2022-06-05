@@ -127,7 +127,41 @@ pre > button:active {
   background-color: rgb(175, 175, 175);
 }
 
-@media (max-width: 878px) {
+@media (max-width: 728px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    display: block;
+    flex-direction: row;
+    box-shadow: 0 1px 5px 0 black;
+    z-index: 1;
+  }
+
+  #navbar header {
+    text-align: center;
+  }
+  #navbar ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  #navbar ul li {
+    flex-direction: row;
+  }
+
+  #navbar ul li .sub-link {
+    display: none;
+  }
+  #main-doc .main-section {
+    margin-left: auto;
+  }
+
+
   #navbar header {
     color: unset;
   }
