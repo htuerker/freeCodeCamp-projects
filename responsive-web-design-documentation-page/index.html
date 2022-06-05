@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css"
+    />
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>Code Samples</header>
+        <ul>
+          <li>
+            <a class="nav-link" href="#Javascript"> Javascript </a>
+            <a class="sub-link">Palindrome Checker</a>
+            <a class="sub-link">Ceasars Cypher</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#CSS"> CSS </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Java"> Java </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Ruby"> Ruby </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Scala"> Scala </a>
+          </li>
+        </ul>
+      </nav>
+      <section id="Javascript" class="main-section">
+        <header>Javascript</header>
+        <section class="sub-section">
+          <header class="sub-header">Palindrome Checker</header>
+          <p>
+            A palindrome is used to verify a sequence of numbers, strings, or
+            letters that are read left to right and right to left to match the
+            same characters or return the same sequence of characters.
+          </p>
+          <ol>
+            <li>Get the strings or numbers from the user.</li>
+            <li>Take a temporary variable that holds the numbers.</li>
+            <li>Reverse the given number.</li>
+            <li>Compare the original number with the reversed number</li>
+            <li>
+              If the temporary and original number are same, it the number or
+              string is a Palindrome.
+            </li>
+            <li>Else the given string or number is not the Palindrome.</li>
+          </ol>
+        </section>
+        <p style="display: none">p2</p>
+        <pre><code class="language-javascript">function palindrome(str) {
+  let start = 0;
+  let end = str.length - 1;
+  while(start &lt; end) {
+    if(str[start] !== str[end]) {
+      return false;
+    }
+    start++;
+    end--;
+  }
+
+  return true;
+}</code><button>Explore on the Playground</button></pre>
+        <ul style="display: none">
+          <li>list item</li>
+        </ul>
+        <section class="sub-section">
+          <header class="sub-header">Ceasars Cipher</header>
+          <p>
+            The Caesar Cipher technique is one of the earliest and simplest
+            method of encryption technique. It’s simply a type of substitution
+            cipher, i.e., each letter of a given text is replaced by a letter
+            some fixed number of positions down the alphabet. For example with a
+            shift of 1, A would be replaced by B, B would become C, and so on.
+          </p>
+          <ol style="display: none">
+            <li>Get the strings or numbers from the user.</li>
+            <li>Take a temporary variable that holds the numbers.</li>
+            <li>Reverse the given number.</li>
+            <li>Compare the original number with the reversed number</li>
+            <li>
+              If the temporary and original number are same, it the number or
+              string is a Palindrome.
+            </li>
+            <li>Else the given string or number is not the Palindrome.</li>
+          </ol>
+          <pre><code class="language-javascript">
+function rot13(str) {
+  let result = "";
+  for(let i = 0; i &lt; str.length; i++) {
+    let current = str[i];
+    let code = current.charCodeAt(0);
+    if(code &lt; 65 || code &gt; 90) {
+      result += String.fromCharCode(code);
+      continue;
+    }
+    let newCode = code - 13;
+    if(newCode &lt; 65) {
+      newCode = 90 - (13 - (code - 65 + 1));
+    }
+    result += String.fromCharCode(newCode);
+  }
+  return result;
+}
+        </code></pre>
+        </section>
+      </section>
+      <section id="CSS" class="main-section">
+        <header>CSS</header>
+      </section>
+      <section id="Java" class="main-section">
+        <header>Java</header>
+      </section>
+      <section id="Scala" class="main-section">
+        <header>Scala</header>
+      </section>
+    </main>
+  </body>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+</html>

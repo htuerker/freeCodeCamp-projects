@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+body {
+  margin: 0;
+}
+
+a:visited {
+  color: unset;
+}
+
+#main-doc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-doc .main-section {
+  margin-left: 30%;
+  max-width: 500px;
+  padding: 1rem;
+  padding-top: 1rem;
+  color: rgb(100, 100, 100);
+  font-size: 0.8rem;
+}
+
+.main-section header {
+  color: black;
+}
+
+.main-section header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.main-section .sub-section header {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  background-color: rgb(249, 252, 254);
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+#navbar * {
+  margin-left: auto;
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+#navbar header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: right;
+  padding-bottom: 0.5rem;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul li {
+  padding: 0.5rem 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#navbar .nav-link {
+  font-weight: 600;
+}
+#navbar .sub-link {
+  font-size: 0.8rem;
+  color: rgb(100, 100, 100);
+}
+
+pre code {
+  background: white !important;
+  max-width: 500px;
+  border: 2px solid rgb(250, 250, 250) !important;
+  border-radius: 15px;
+  padding: 1rem !important;
+  box-shadow: 0 0 10px 1px rgb(250, 250, 250);
+}
+
+pre {
+  position: relative;
+  max-width: 500px;
+}
+
+pre > button {
+  position: absolute;
+  width: 200px;
+  height: 2.5rem;
+  line-height: 2rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 0 0 5px 5px;
+  top: 0;
+  right: 2rem;
+}
+
+pre > button:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+pre > button:active {
+  background-color: rgb(175, 175, 175);
+}
+
+@media (max-width: 878px) {
+  #navbar header {
+    color: unset;
+  }
+}
