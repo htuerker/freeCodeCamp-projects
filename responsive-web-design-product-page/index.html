@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title></title>
+  </head>
+  <body>
+    <header id="header">
+      <figure>
+        <img id="header-img" src="" />
+      </figure>
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link logo" href="#footer"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png"
+            /></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#video">iPhone</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#form">iPad</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#footer">Mac</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#footer">Watch</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="fund">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/f/fa/FreeCodeCamp_logo.svg"
+      />
+      Donate to support freeCodeCamp
+    </section>
+    <main>
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/0TD96VTf0Xs"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <section class="product-cards" id="iphone">
+        <header>Which iPhone is right for you?</header>
+        <article class="product-card">
+          <figure>
+            <img
+              src="https://www.apple.com/v/iphone/home/bh/images/overview/compare/compare_iphone_13_pro__bpn3x8hs692a_medium.jpg"
+            />
+          </figure>
+          <div class="product-colors">
+            <div class="alpine-green"></div>
+            <div class="silver"></div>
+            <div class="gold"></div>
+            <div class="graphite"></div>
+            <div class="sierra-blue"></div>
+          </div>
+          <header class="card-header">
+            iPhone 13 Pro
+            <span class="description">The ultimate iPhone.</span>
+          </header>
+          <div class="price">From $999</div>
+          <button>Buy</button>
+          <a class="learn-more"> Learn more </a>
+        </article>
+        <article class="product-card">
+          <figure>
+            <img
+              src="https://www.apple.com/v/iphone/home/bh/images/overview/compare/compare_iphone_13__fqzwhmfmroey_medium.jpg"
+            />
+          </figure>
+          <div class="product-colors">
+            <div class="alpine-green"></div>
+            <div class="silver"></div>
+            <div class="gold"></div>
+            <div class="graphite"></div>
+            <div class="sierra-blue"></div>
+          </div>
+          <header class="card-header">
+            iPhone 13<span class="description"
+              >Serious power. Serious value.</span
+            >
+          </header>
+          <div class="price">From $999</div>
+          <button>Buy</button>
+          <a class="learn-more"> Learn more </a>
+        </article>
+      </section>
+      <section id="ipad"></section>
+      <section id="mac"></section>
+      <section id="watch"></section>
+      <section style="display: none">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <input id="submit" type="submit" />
+        </form>
+      </section>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</html>
